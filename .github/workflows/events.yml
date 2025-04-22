@@ -5,8 +5,8 @@ on:
             - main
             - "feature/*" 
             - "feature/**"
-        branches-ignore:
-            - develop
+        #branches-ignore:
+        #    - develop
         tags:
             - v1.*
             - "!v1.1.1"
