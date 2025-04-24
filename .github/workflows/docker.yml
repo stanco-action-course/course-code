@@ -1,0 +1,13 @@
+name: Docker
+on: [workflow_dispatch]
+
+jobs:
+    docker-job:
+        runs-on: ubuntu-latest
+        container: 
+          image: node:23.11-alpine3.20
+        steps:
+            - name: Log Node
+              run: |
+                node -v
+                cat /etc/os-release
